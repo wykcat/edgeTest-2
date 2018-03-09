@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		ul {
+			width: 417px;
+			height: 80px;
+			overflow: auto;
+		}
+		
+		ul li {
+			width: 100px;
+			height: 40px;
+			float: left;
+			border: 1px solid #cccccc;
+			box-sizing: border-box;
+		}
+	</style>
+
+	<body>
+		<ul>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+
+	</body>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+		$("body").mouseleave(function() {
+			console.log("11");
+			return false;
+		});
+		$("ul").scroll(function() {
+			console.log("22");
+			return false;
+		});
+	</script>
+
+</html>
